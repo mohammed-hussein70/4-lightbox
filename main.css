@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  position: fixed;
+  top: 0;
+  display: none;
+}
+.container .close {
+  position: absolute;
+  top: 0;
+  right: 2px;
+  z-index: 3;
+  color: white;
+  padding: 10px;
+  font-size: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+.container .expendImg {
+  position: relative;
+  z-index: 1;
+}
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container .row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.container .row .column img {
+  margin: 4px 5px;
+  float: left;
+  width: 100px;
+  height: auto;
+  opacity: 0.7;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+  }
+}
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.row .column img {
+  margin: 4px 5px;
+  float: left;
+  width: 100px;
+  height: auto;
+  opacity: 0.7;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+  }
+}
+.next {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  padding: 5px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 2;
+  transition: color 0.3s ease;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.prev {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  padding: 5px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 2;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.container .image {
+  position: relative;
+}
